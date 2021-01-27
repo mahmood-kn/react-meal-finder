@@ -40,10 +40,6 @@ const MealState = ({ children }) => {
   };
 
   const getRandomMeal = async () => {
-    // resultHeading.innerHTML = '';
-    // mealsEl.innerHTML = '';
-    // singleMeal.innerHTML = '';
-
     const res = await fetch(
       'https://www.themealdb.com/api/json/v1/1/random.php'
     );
