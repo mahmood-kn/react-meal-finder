@@ -1,5 +1,5 @@
 function App() {
-  return <div className='App'>Meal Finder</div>;
+  return <div>Meal Finder</div>;
 }
 
 export default App;
