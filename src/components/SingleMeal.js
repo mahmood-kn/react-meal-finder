@@ -8,7 +8,7 @@ const SingleMeal = () => {
   for (let i = 1; ingredient.length <= 20; i++) {
     if (singleMeal[`strIngredient${i}`]) {
       ingredient.push(
-        `${singleMeal[`strIngredient${i}`]} - ${SingleMeal[`strMeasure${i}`]}`
+        `${singleMeal[`strIngredient${i}`]} - ${singleMeal[`strMeasure${i}`]}`
       );
     } else {
       break;
