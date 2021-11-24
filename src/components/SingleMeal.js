@@ -1,10 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import MealContext from '../context/mealContext';
 
 const SingleMeal = () => {
   const { singleMeal } = useContext(MealContext);
   let ingredient = [];
-
+  useEffect(() => {
+    console.log(singleMeal);
+  }, [singleMeal]);
   for (let i = 1; ingredient.length <= 20; i++) {
     if (singleMeal[`strIngredient${i}`]) {
       ingredient.push(
